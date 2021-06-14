@@ -48,6 +48,11 @@ const useStyles = makeStyles(theme => ({
     },
     width: 140,
   },
+  smallScreen: {
+    [theme.breakpoints.down('sm')]: {
+      justifyContent: 'center',
+    },
+  },
 }));
 
 const img1 =
@@ -58,7 +63,7 @@ function Section3() {
 
   return (
     <Paper id="payment" elevation={0} className={classes.root} square>
-      <Grid container>
+      <Grid container className={classes.smallScreen}>
         <Grid item sm={12} md={6} align="center">
           <img src={img1} className={classes.media} alt="" />
         </Grid>
