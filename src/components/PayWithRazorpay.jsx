@@ -63,8 +63,8 @@ function PayWithRazorpay({ className }) {
         alert(result.data.msg);
       },
       prefill: {
-        name: 'Soumya Dey',
-        email: 'SoumyaDey@example.com',
+//         name: 'Test',
+        email: 'xyz@example.com',
         contact: '9999999999',
       },
       theme: {
